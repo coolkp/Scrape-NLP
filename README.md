@@ -10,7 +10,7 @@
 
 - All Links to be scraped are in [../brightedge/spiders/main_spider.py](../brightedge/spiders/main_spider.py)
 - The data scraped is cleaned and stored in **_"domainname".txt_** in the base of this directory
-- All generated list of topics are stored in *"domainname_tags.txt"* in the base of this directory
+- All generated list of topics are stored in **_"domainname_tags.txt"_** in the base of this directory
 
 ### Run
 `scrapy crawl scraper`
@@ -18,4 +18,4 @@
 ### Results
  Outputed in terminal in form of a list immediately after every webpage being crawled.
  They are also stored in txt file in base of directory
- They are stored for every crawl in `tags` variable in *main_spider.py*
+ They are stored for every crawl in `tags` variable in **_main_spider.py_**
