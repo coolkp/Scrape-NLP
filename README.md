@@ -9,7 +9,7 @@
 ## Project Run
 
 - All Links to be scraped are in [../brightedge/spiders/main_spider.py](../brightedge/spiders/main_spider.py)
-- The data scraped is cleaned and stored in *"domainname".txt* in the base of this directory
+- The data scraped is cleaned and stored in _"domainname".txt* in the base of this directory
 - All generated list of topics are stored in *"domainname_tags.txt"* in the base of this directory
 
 ### Run
