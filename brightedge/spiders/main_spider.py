@@ -1,8 +1,6 @@
 import scrapy
-import nltk
 import spacy
 import string
-from nltk import tokenize
 from bs4 import BeautifulSoup
 import re
 
