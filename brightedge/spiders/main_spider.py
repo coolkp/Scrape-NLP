@@ -43,7 +43,7 @@ class MainSpider(scrapy.Spider):
         # print(sentences)
         output_list = {}
         # Create key topics list and frequency using lemming and sentence trees
-        bad_list = ['he','she','to','they','He','She','who','Who','it']
+        # bad_list = ['he','she','to','they','He','She','who','Who','it']
         for token in sentences:
             if token.dep_ == 'nsubj' or token.tag_ == 'NNP':
                 if token.text not in string.punctuation and token.tag_ != 'PRP' and token.tag_ != 'DT' and token.tag_ != 'WP' and token.text.isalpha() :
@@ -68,4 +68,7 @@ class MainSpider(scrapy.Spider):
         # Save all scraped text to txt file with name "top-domainname.txt"
         with open(filename, 'w') as f:
             f.write(text)
+        tagfile = '%s_tags.txt' % page
+        with open(tagfile, 'w') as f:
+            f.write((',').join(tags))
         self.log('Saved file %s' % filename)
